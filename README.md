@@ -91,6 +91,7 @@ java > main > MainBookList 실행
 
 
 #### 도서 정보 테이블
+```html
 create  table  book(  
      b_code  varchar2(20)  primary key,  
      b_name  varchar2(100)  not null,  
@@ -101,6 +102,7 @@ create  table  book(
      img  varchar2(100)  not null,  
      b_summary  varchar2(3000)  not null  
 );
+```
 
 ```plaintext
 insert into book values('b1001','파친코1','이민진','문학사상',10,'2018-03-09','http://image.yes24.com/goods/59382261/XL','한국계 1.5세인 미국 작가 이민진의 장편소설 『파친코』 제1권. 내국인이면서 끝내 이방인일 수밖에 없었던 자이니치(재일동포)들의 처절한 생애를 깊이 있는 필체로 담아낸 작품이다. 저자가 자이니치, 즉 재일동포의 존재를 처음 접한 것은 대학생이었던 1989년, 일본에서 자이니치들을 만났던 개신교 선교사의 강연을 들은 때였다. 상승 욕구가 강한 재미동포들과 달리 많은 자이니치들이 일본의 사회적, 경제적 사다리 아래쪽에서 신음하고 있다는 사실을 알게 된 저자는 그때부터 자이니치에 관해 관심을 가지게 되었고 이번 작품에서 일제강점기부터 1980년대까지를 시대적 배경으로 하여 4대에 걸친 핏줄의 역사를 탄생시켰다.');
