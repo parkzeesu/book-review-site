@@ -92,15 +92,15 @@ java > main > MainBookList 실행
 
 #### 도서 정보 테이블
 ```html
-create  table  book(  
-     b_code  varchar2(20)  primary key,  
-     b_name  varchar2(100)  not null,  
-     author  varchar2(100)  not null,  
-     publisher  varchar2(100)  not null,  
-     g_code  number(2)  check(g_code in (10,20,30,40,50,60,70,80)),  
-     publication_date  date,  
-     img  varchar2(100)  not null,  
-     b_summary  varchar2(3000)  not null  
+CREATE TABLE book(  
+    b_code varchar2(20) primary key,  
+    b_name varchar2(100) not null,  
+    author varchar2(100) not null,  
+    publisher varchar2(100) not null,  
+    g_code number(2) check(g_code in (10,20,30,40,50,60,70,80)),  
+    publication_date date,  
+    img varchar2(100) not null,  
+    b_summary varchar2(3000) not null  
 );
 ```
 
@@ -146,9 +146,9 @@ insert into book values('b1027','NFT 현명한 투자자','김동은','알투스
 
 #### 도서 장르 테이블
 ```html
-create  table  genre(  
-     g_code number(2)  check(g_code in (10,20,30,40,50,60,70,80)) primary key,  
-     g_name varchar2(50) not null  
+CREATE TABLE genre(  
+    g_code number(2) check(g_code in (10,20,30,40,50,60,70,80)) primary key,  
+    g_name varchar2(50) not null  
 ); 
 ```
 ```plaintext
@@ -166,21 +166,21 @@ insert into genre values(80,'취미');
 #### 회원정보 테이블  
 ```html
 CREATE TABLE  sign_up (  
-  n_id          VARCHAR2(100) not null PRIMARY KEY,  
-  n_pw        VARCHAR2(100) not null,  
-  n_name     VARCHAR2(100)  not null,  
-  n_tel        VARCHAR2(100) not null  
+    n_id VARCHAR2(100) not null PRIMARY KEY,  
+    n_pw VARCHAR2(100) not null,  
+    n_name VARCHAR2(100) not null,  
+    n_tel VARCHAR2(100) not null  
 );
 ```
 
 #### 한줄평 테이블  
 ```html
-CREATE TABLE  review (  
-  r_num    number(20)  PRIMARY KEY,   
-  n_id       VARCHAR2(100) references sign_up(n_id) ,  
-  b_code   VARCHAR2(20)  references book(b_code) ,  
-  content  VARCHAR2(500) not null,   
-  r_date    date   not null                     
+CREATE TABLE review (  
+    r_num number(20) PRIMARY KEY,   
+    n_id VARCHAR2(100) references sign_up(n_id),  
+    b_code VARCHAR2(20) references book(b_code),  
+    content VARCHAR2(500) not null,   
+    r_date date not null                     
 );
 ```
 
