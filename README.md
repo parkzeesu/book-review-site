@@ -6,12 +6,12 @@ java > main > MainBookList 실행
 #### java
 [ login ] 
 
-- ajaxtest.java : 아이디 중복찾기를 위한 서블릿파일  
-- checklogin.java : 로그인 유효성 검사에 사용되는 서블릿파일  
-- findid.java : 아이디를 찾을때 사용되는 서블릿파일  
-- findpw.java : 비밀번호를 찾을떄 사용되는 서블릿파일  
-- registeruser.java : 회원가입시 사용되는 서블릿파일   
-- user.java : 유저를 구성하는 정보 (아이디, 비밀번호, 이름, 전화번호)  
+- ajaxtest : 아이디 중복찾기를 위한 서블릿파일  
+- checklogin : 로그인 유효성 검사에 사용되는 서블릿파일  
+- findid : 아이디를 찾을때 사용되는 서블릿파일  
+- findpw : 비밀번호를 찾을떄 사용되는 서블릿파일  
+- registeruser : 회원가입시 사용되는 서블릿파일   
+- user : 유저를 구성하는 정보 (아이디, 비밀번호, 이름, 전화번호)  
 - userdao : 유저 데이터를 다루는 dao 파일  
     - RegisterUser : 유저등록  
     - duplicatedID : 아이디 중복 체크  
