@@ -1,4 +1,4 @@
-# book-review-site
+# book-review-site info
 
 ### 메인화면 실행하기
 java > main > MainBookList 실행
