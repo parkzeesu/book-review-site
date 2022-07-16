@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+caption {
+	width: 450px;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+table {
+	width: 450px;
+	height: 180px;
+	margin: auto;
+	margin-top:13%;
+}
+
+td {
+	text-align: end;
+}
+
+td input {
+	width: 420px;
+	height: 20px;
+	padding: 10px;
+	border: 2px solid rgb(237, 125, 49);
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid rgb(255, 200, 128);
+	font-size: 13px;
+	background-color: rgb(255, 200, 128);
+	color: white;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+#btn_td {
+	text-align: center;
+}
+button:hover{
+    background-color: rgb(250, 156, 32);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>비밀번호 찾기</title>
+<link rel="stylesheet" href="/p3/html/darkmode/toggle_style.css">
+<link rel="stylesheet" href="비밀번호찾기.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src='비밀번호찾기.js'></script>
+
+</head>
+<body>
+
+	<form>
+		<label class="switch">
+			<input id="switch_btn" type="checkbox" checked>
+			<span class="icon_box">
+				<ion-icon name="bulb-outline"></ion-icon>
+			</span>
+		</label>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="/p3/html/darkmode/toggle.js"></script>
+		<script src="/p3/html/darkmode/change.js"></script>
+	
+		<table>
+			<tbody>
+			<caption>비밀번호 찾기</caption>
+
+			<tr>
+				<td>아이디</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_id" name="n_id"
+					placeholder="아이디">
+			</tr>
+			<tr>
+				<td>이름</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_name"
+					name="n_name" placeholder="이름">
+			</tr>
+			<tr>
+				<td>전화번호</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_tel" name="n_tel"
+					placeholder="전화번호"></td>
+			</tr>
+			<tr>
+				<td class="btn_td">
+					<button type="button" onclick='ck2();'>비밀번호 찾기</button>
+					<button type="button" onclick="history.go(-1);">뒤로가기</button>
+				</td>
+			</tr>
+			</tbody>
+
+		</table>
+	</form>
+
+</body>
+</html>

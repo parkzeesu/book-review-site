@@ -1,0 +1,211 @@
+/* 리셋 */
+* {
+    transition: background-color 0.7s, color 0.1s, border 0.5s;
+    padding: 0;margin: 0;
+  }
+
+/*버튼 디자인*/
+.switch{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    /*
+    background: #212121;
+    border-radius: 10px;
+    */
+    left: 85%;
+    top: 15px;
+}
+.switch_btn{
+    appearance: none;
+}
+.icon_box{
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 50px;
+    height: 50px;
+    background : #1b1d21;
+    border: 6px solid #15171a;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.switch_btn:checked ~ .icon_box{
+left: 75px;
+}
+*/
+.icon_box ion-icon{
+    color: rgba(255, 255,255,0.25);
+    font-size: 2em;
+    transition: 0.5s;
+}
+#switch_btn:checked ~ .icon_box ion-icon{
+    color: rgba(255, 255,255,1);
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
+}
+
+
+/*페이지 디자인*/
+
+:root{
+    --background: #fff;
+    --backgrounds: rgb(255, 204, 138);
+    --input: #fffcf4;
+    --inputTxt: #000000;
+    --btncolor: rgb(255, 200, 128);
+    --infoTxt: #000000;
+    --hovercol:#aaaaaa;
+    --liTxt:#fff;
+    --footback: rgb(136, 136, 136);
+    --border: #393c42;
+    
+}
+/* 색상체인지 변수 */
+body{
+    background-color: var(--background);
+    color: var(--infoTxt);
+}
+caption{
+    color: var(--infoTxt);
+}
+td{
+    color: var(--infoTxt);
+}
+
+td input{
+    background-color: var(--input);
+    border: 1px solid gray;
+    color: var(--inputTxt);
+}
+/* 메인페이지 */
+#search_wrap{
+    background-color: var(--input);
+}
+#search_input{
+    background-color: var(--input);
+    color: var(--inputTxt);
+}
+.book_name{
+    color: var(--inputTxt);
+}
+.book_author{
+    color: var(--inputTxt);
+}
+.main_book_menu{
+    color: var(--inputTxt);
+}
+.main_book_menu_plus{
+    color: var(--inputTxt);
+}
+.main_book_menu_plus2{
+    color: var(--inputTxt);
+}
+.logo span{
+    color: var(--inputTxt);
+}
+
+#login>a:hover{
+    color: var(--hovercol);
+    text-decoration: underline;
+}
+
+nav>div{
+    background-color: var(--backgrounds);
+}
+nav{
+    background-color: var(--backgrounds);
+}
+
+td button{
+    background-color: var(--backgrounds);
+    border:var(--backgrounds) ;
+    color: var(--liTxt);
+}
+
+div button{
+    background-color: var(--backgrounds);
+    border:var(--backgrounds) ;
+    color: var(--liTxt);
+}
+
+/* 메인_메뉴 */
+#show_select{
+    background-color: var(--input);
+    color: var(--inputTxt);
+}
+#show_select option{
+    color: var(--inputTxt);
+}
+
+.bookname h3{
+    color: var(--inputTxt);
+}
+
+section h3{
+    color: var(--inputTxt);
+}
+
+section span{
+    color: var(--inputTxt);
+}
+
+section input{
+    background-color: var(--input);
+    color: var(--inputTxt);
+}
+
+section button{
+    background-color: var(--backgrounds);
+    border:var(--backgrounds) ;
+    color: var(--liTxt);
+}
+
+.main_page_btn>a{
+    color: var(--inputTxt);
+}
+
+#wrap li p{
+    color: var(--inputTxt);
+}
+
+
+.bookname>a{
+    text-decoration-color : var(--inputTxt);
+    color: var(--inputTxt);
+}
+.bookinfo{
+    color: var(--inputTxt);
+}
+.book_info:hover{
+    background-color: var(--hovercol);
+}
+.book_info:hover .book_img{
+    border: var(--hovercol);
+    transition : 0.5s;
+}
+.bookstory{
+    color: var(--inputTxt);
+}
+.footer_link_area{
+    background-color: var(--footback);
+}
+.footer_link_area>div{
+    background-color: var(--footback);
+}
+/* 회원가입용 버튼 */
+
+#join_btn{
+    background-color: var(--backgrounds);
+    border:var(--backgrounds) ;
+    color: var(--liTxt);
+}
+#check_btn{
+    background-color: var(--backgrounds);
+    border:var(--backgrounds) ;
+    color: var(--liTxt);
+}

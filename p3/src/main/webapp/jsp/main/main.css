@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+/* header */
+header{
+    width: 1000px;
+    height: 130px;
+    margin: auto;
+    display: flex;
+}
+#logo_area{
+    width: 235px;
+    display: flex;
+    padding-left: 25px;
+}
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 50px;
+    color: rgb(237, 125, 49);
+}
+.logo span{
+    font-size: 10px;
+}
+#search_area{
+    width: 480px;
+}
+#search_wrap{
+    width: 420px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid rgb(237, 125, 49);
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 40px;
+    padding-left: 10px;
+    display: flex;
+}
+#search_input{
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    border: 0;
+}
+#search_input:focus{
+    outline: none;
+}
+#search_icon{
+    width: 25px;
+    height: 25px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/149/149852.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-left: 0px;
+    cursor: pointer;
+}
+#login_area{
+    width: 260px;
+    position: relative;
+}
+#login{
+    position: absolute;
+    display: block;
+    right: 25px;
+    top: 10px;
+}
+#login>a, #login>span{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+#login>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/* nav */
+nav{
+    height: 50px;
+    background-color: rgb(255, 200, 128);
+}
+nav>div{
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(255, 200, 128);
+}
+#menu_wrap{
+    width: 880px;
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.menu_area{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu{
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: bold;
+}
+.menu_area:hover{
+    background-color: rgb(250, 156, 32);
+    border-radius: 5px;
+}
+
+/* main */
+main{
+    width: 1000px;
+    height: 1900px;
+    margin: auto;
+}
+.main_books{
+    display: flex;
+}
+.main_book_menu_wrap{
+    width: 1000px;
+    height: 80px;
+    position: relative;
+}
+.main_book_menu_wrap2{
+    width: 500px;
+    height: 80px;
+    position: relative;
+}
+.main_book_menu_wrap a, .main_book_menu_wrap2 a{
+    text-decoration: none;
+}
+.main_book_menu{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 25px;
+    top: 35px;
+}
+.main_book_menu:hover{
+    color: rgb(250, 156, 32);
+}
+.main_book_menu_plus, .main_book_menu_plus2{
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    top: 45px;
+}
+.main_book_menu_plus:hover, .main_book_menu_plus2:hover{
+    text-decoration: underline;
+}
+.main_book{
+    display: flex;
+    list-style: none;
+}
+.book_info{
+    width: 200px;
+    height: 290px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    outline: 0.3px solid rgb(219, 219, 219);
+}
+.book_info a{
+    text-decoration: none;
+}
+.book_info:hover{
+    outline: 3px solid rgb(250, 156, 32);
+}
+.book_img{
+    width: 140px;
+    height: 190px;
+    margin: auto;
+    margin-top: 25px;
+    border: 0.3px solid rgb(219, 219, 219);
+}
+.book_name{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.book_author{
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+/* footer */
+.footer_link_area{
+    height: 50px;
+    background-color: rgb(136, 136, 136);
+}
+.footer_link_area>div{
+    width: 1000px;
+    background-color: rgb(136, 136, 136);
+    margin: auto;
+}
+.footer_link{
+    width: 390px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+.f_links, .f_text{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+    font-size: 12px;
+    color: white;
+}
+.f_links:hover{
+    text-decoration: underline;
+}
+.footer_info{
+    width: 940px;
+    height: 70px;
+    margin: auto;
+    padding: 30px;
+}
+.footer_text{
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+.footer_text>span{
+    color: gray;
+    font-weight: bold;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+<link rel="stylesheet" href="/p3/html/darkmode/toggle_style.css">
+<link rel="stylesheet" href="회원가입.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="회원가입.js"></script>
+</head>
+<body>
+
+
+	<form name="frm" method="post" action="/p3/RegisterUser">
+		<label class="switch">
+			<input id="switch_btn" type="checkbox" checked>
+			<span class="icon_box">
+				<ion-icon name="bulb-outline"></ion-icon>
+			</span>
+		</label>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="/p3/html/darkmode/toggle.js"></script>
+		<script src="/p3/html/darkmode/change.js"></script>
+		<table>
+			<tbody>
+			<caption>회원가입</caption>
+
+			<tr>
+				<td>아이디
+					<button type="button" onclick="ck();" id="check_btn">아이디 중복확인</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_id" name="n_id"
+					placeholder="아이디"></td>
+			</tr>
+			
+			<tr>
+				<td>비밀번호</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="password" id="n_pw"
+					name="n_pw" placeholder="비밀번호"></td>
+			</tr>
+			<tr>
+				<td>비밀번호 확인</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="password" id="userPw_Check"
+					name="userPw_Check" placeholder="비밀번호 확인"></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_name"
+					name="n_name" placeholder="이름"></td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+			</tr>
+			<tr>
+				<td class="input_td"><input type="text" id="n_tel" name="n_tel"
+					placeholder="- 자 없이 숫자로만 입력해주세요"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button id="join_btn">회원가입</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
