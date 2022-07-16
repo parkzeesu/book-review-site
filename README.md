@@ -145,10 +145,12 @@ insert into book values('b1027','NFT 현명한 투자자','김동은','알투스
 
 
 #### 도서 장르 테이블
+```html
 create  table  genre(  
      g_code number(2)  check(g_code in (10,20,30,40,50,60,70,80)) primary key,  
      g_name varchar2(50) not null  
-);  
+); 
+```
 ```plaintext
 insert into genre values(10,'소설');  
 insert into genre values(20,'시/에세이');  
@@ -162,15 +164,17 @@ insert into genre values(80,'취미');
 
 
 #### 회원정보 테이블  
+```html
 CREATE TABLE  sign_up (  
   n_id          VARCHAR2(100) not null PRIMARY KEY,  
   n_pw        VARCHAR2(100) not null,  
   n_name     VARCHAR2(100)  not null,  
   n_tel        VARCHAR2(100) not null  
 );
-
+```
 
 #### 한줄평 테이블  
+```html
 CREATE TABLE  review (  
   r_num    number(20)  PRIMARY KEY,   
   n_id       VARCHAR2(100) references sign_up(n_id) ,  
@@ -178,10 +182,12 @@ CREATE TABLE  review (
   content  VARCHAR2(500) not null,   
   r_date    date   not null                     
 );
-
+```
 
 #### 한줄평 시퀀스  
+```html
 create sequence re_seq  
 start with 1  
 increment by 1;  
+```
 
