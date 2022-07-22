@@ -14,10 +14,10 @@ function login() {
 		let pw = $("#n_pw").val();
 	
 	$.ajax({
-		type: "post",
+		type: "get",
 		dataType: "text",
 		url: "http://localhost:8090/p3/ajaxtest4",
-		data: "n_id"+ id + "&n_pw"+ pw  ,
+		data: { "n_id": id , "n_pw": pw  }  ,
 		success: function(data, textStatus) {
 			if (data == 1) {
 				alert(id +"님 환영합니다~!^^");
